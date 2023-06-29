@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 5vh;
+}
+
+footer{
+    height: 5vh;
+}
+
+.black{
+    background-color: black;
+    height: 100%;
+    z-index: 2;
+}
+
+#avatar{
+    height: 90vh;
+    position: relative;
+}
+
+/* holder of the background selection */
+#bgContainer{
+    width: 100px;
+    position: absolute;
+    left:0;
+    top: 10vh;
+    height: 75vh;
+    background-color: blueviolet;
+}
+
+/* holder of the avatar selection */
+#avContainer{
+    width: 100px;
+    position: absolute;
+    right:0;
+    top: 10vh;
+    height: 75vh;
+    background-color: blueviolet;
+   
+
+}
+
+#avContainer ul li{
+    height: 40px;
+    width: 60px;
+    background-color: pink;
+    margin: 20px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+#bgContainer img{
+    height: 40px;
+    width: 60px;
+    object-fit: cover;
+    margin: 10px 20px 0 20px;
+}
+
+/* background and avatar center stage */
+#stage{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    object-fit: cover;
+}
+
+#avatar img{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    height: 90%;
+    width: auto;
+    left: 25vw;
+}

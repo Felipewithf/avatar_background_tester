@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bg Tester</title>
-    <link rel="stylesheet" href="assets/css/">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <img id="stage" src="./assets/img/bg/c1/1.jpg">
     <header>
         <div class="black"></div>
         <div class="controls"></div>
     </header>
+    <div id="avatar">
+        <img src="./assets/img/av/s1/1.png">
+    </div>
 
-    <aside id="avContainer"></aside>
+    <aside id="bgContainer">
+        <ul class="bgItem">
+            <li><img src="./assets/img/bg/c1/1.jpg"></li>
+            <li><img src="./assets/img/bg/c1/1.jpg"></li>
+        </ul>
+    </aside>
+
+    <aside id="avContainer">
+        <ul class="avItem">
+            <li></li>
+            <li></li>
+
+        </ul>
+    </aside>
+
+    
 
     <footer>
-         <div id="bgContainer"></div>
         <div class="black"></div>
     </footer>
+
     
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
