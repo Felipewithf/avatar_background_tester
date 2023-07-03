@@ -23,7 +23,7 @@ footer{
 }
 
 /* holder of the background selection */
-#bgContainer{
+#avContainer{
     width: 100px;
     position: absolute;
     left:0;
@@ -33,26 +33,24 @@ footer{
 }
 
 /* holder of the avatar selection */
-#avContainer{
+#bgContainer{
     width: 100px;
     position: absolute;
     right:0;
     top: 10vh;
     height: 75vh;
     background-color: rgba(255,255,255, 0.5);
-   
-
-}
-
-#avContainer ul li{
-    height: 40px;
-    width: 60px;
-    background-color: pink;
-    margin: 20px;
 }
 
 ul li{
     list-style-type: none;
+}
+
+#avContainer img{
+    height: 58px;
+    width: 62px;
+    object-fit: cover;
+    margin: 10px 20px 0 20px;
 }
 
 #bgContainer img{
