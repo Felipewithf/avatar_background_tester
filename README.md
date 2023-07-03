@@ -22,4 +22,4 @@ To navigate between avatar variations - OF THE SAME STYLE - press the "s" or "d"
 
 ## Environment
 
-You cna be the demo app here with selected avatars and backgrounds ![link to app](https://felipewithf.github.io/avatar_background_tester/)
+You can test the demo app here with selected avatars and backgrounds https://felipewithf.github.io/avatar_background_tester/
