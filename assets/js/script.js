@@ -19,27 +19,27 @@ var background = [{
 var avatar = [{
     "name": "something",
     "code": "a1",
-    "num": [1,2]
+    "num": [1,2,3]
 },
 {
     "name": "something",
     "code": "a2",
-    "num": [1]
+    "num": [1,2]
 },
 {
     "name": "something",
     "code": "a3",
-    "num": [1]
+    "num": [1,2,3]
 },
 {
     "name": "something",
     "code": "a4",
-    "num": [1]
+    "num": [1,2,3,4]
 },
 {
     "name": "something",
     "code": "a5",
-    "num": [1]
+    "num": [1,2,3]
 },
 
 ];
@@ -139,24 +139,22 @@ function givemeVariationIndex(b_a){
     // check if is a background or avatar
     if(b_a === "b"){
         //check if there are no more variations of backgrounds
-        if(variationIndex == background[categoryIndex].num.length){
+        if(variationIndex >= background[categoryIndex].num.length){
             variationIndex = 0;
-        }else if(variationIndex == -1){
+        }else if(variationIndex < 0){
             variationIndex = background[categoryIndex].num.length -1;
         }
         return (`${background[categoryIndex].code}/${background[categoryIndex].num[variationIndex]}`);
 
     }else {
-        //else assume is an avatar change
-        console.log(variationIndexAvatar);
+        //else assume is an avatar change 
         //check if there are no more variations of \avatars
-        if(variationIndexAvatar == avatar[categoryIndexAvatar].num.length){
+        if(variationIndexAvatar >= avatar[categoryIndexAvatar].num.length){
             variationIndexAvatar = 0;
             
-        }else if(variationIndexAvatar == -1){
+        }else if(variationIndexAvatar < 0){
             variationIndexAvatar = avatar[categoryIndexAvatar].num.length -1;
         }
-        console.log(variationIndexAvatar);
         return (`${avatar[categoryIndexAvatar].code}/${avatar[categoryIndexAvatar].num[variationIndexAvatar]}`);
     }
 }
@@ -173,12 +171,14 @@ function givemeCategoryIndex(b_a){
         }
         return (`${background[categoryIndex].code}/${background[categoryIndex].num[0]}`);
     }else {
+        console.log(categoryIndexAvatar);
         //else assume is an avatar change
         if(categoryIndexAvatar == avatar.length){
             categoryIndexAvatar = 0;
             }else if(categoryIndexAvatar == -1){
                 categoryIndexAvatar = avatar.length -1;
             }
+            console.log(categoryIndexAvatar);
             return (`${avatar[categoryIndexAvatar].code}/${avatar[categoryIndexAvatar].num[0]}`);
 
     }
